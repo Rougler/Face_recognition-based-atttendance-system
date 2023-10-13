@@ -39,7 +39,7 @@ def record_attendance(name):
             namelist.append(record[0])
         if name not in namelist:
             now = datetime.now()
-            dt = now.strftime('%H:%M:%S')
+            dt = now.strftime('%H:%M:%S'","'%Y-%m-%d')
             # Append the new attendance record to the file
             file.writelines(f'\n{name},{dt}')
 
